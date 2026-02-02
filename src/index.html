@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamp — Login</title>
+    <link rel="stylesheet" href="./css/lampa.css">
 
-    <load src="./partials/footer.html" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+</head>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+<body class="lights-off">
+    <div class="scene">
+
+        <div class="lamp">
+            <div class="lamp-head"></div>
+            <div class="lamp-stand"></div>
+            <div class="lamp-base"></div>
+            <div class="lamp-chain">
+                <div class="lamp-ball" id="pull"></div>
+            </div>
+        </div>
+
+
+        <div class="login-card" id="login-form">
+            <h2>Login</h2>
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Username" required>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </div>
+    </div>
+
+
+    <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+
+    <script src="./lampa.js"></script>
+</body>
+
 </html>
