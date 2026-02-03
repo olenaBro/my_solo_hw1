@@ -9,7 +9,7 @@ export default defineConfig(({ command }) => {
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src',
+    base: '/my_solo_hw1/',  
     build: {
       sourcemap: true,
       rollupOptions: {
