@@ -1,3 +1,4 @@
+
 const body = document.body;
 const loginForm = document.getElementById('login-form');
 const pull = document.getElementById('pull');
@@ -28,7 +29,6 @@ Draggable.create(pull, {
     type: "y",
     bounds: { minY: 0, maxY: 60 },
     onDrag: function () {
-        // Трохи розтягуємо шнурок візуально
         lampChain.style.height = (100 + this.y) + 'px';
     },
     onDragEnd: function () {
